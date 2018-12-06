@@ -2,17 +2,24 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infográfico Interativo</title>
     <link rel="stylesheet" href="assets/flexboxgrid/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+    <div class="row box-start center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h1 class="info-title">Quanto vale o lixo?</h1>
-        <input class="input-name" type="text" name="nome" value="Nome"> <br>
-        <input type="submit" name="submit" value="Começar">
+        <form class="quiz-form" action="pergunta1.html" method="post">
+          <input class="input-name" type="text" name="nome" placeholder="Escreva seu nome..."> <br>
+          <input class="submit" type="submit" name="submit" value="Começar">
+        </form>
       </div>
     </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/function.js"></script>
   </body>
 </html>
