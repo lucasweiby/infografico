@@ -1,17 +1,44 @@
 @import "../font/stylesheet.css";
 
 body {
+  background: #111;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  font-family: "Nunito";
+  margin: 0;
+}
+
+.lixo {
+  overflow-y: scroll;
+}
+
+.fas {
+  font-size: 20vh;
+  margin-bottom: -2vh;
+  color: #2ecc71;
+}
+
+.icon-result {
+  font-size: 30vh;
+  margin-top: 2vh;
+  margin-bottom: -2vh;
+  color: #c0392b;
+
+}
+
+.box-start {
   background: url('../img/1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  background-color: #555;
+  background-blend-mode: multiply;
   height: 100vh;
-  font-family: "Nunito"
 }
 
-.box-start {
+.box-question {
+  background: #111;
   height: 100vh;
 }
 
@@ -31,10 +58,26 @@ body {
   padding: 2vh;
 }
 
-.info-quest {
+.input-name::placeholder {
+  color: #2ecc71;
+  font-family: "Nunito";
+  font-weight: 300;
+}
+
+.info-quest, .info-result {
   font-size: 2vw;
   font-weight: 900;
+  color: #2ecc71;
+}
+
+.info-result {
   color: white;
+}
+
+.feedback {
+  font-size: 3vh;
+  margin-top: -2vh;
+
 }
 
 .submit {
@@ -45,18 +88,96 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1vw;
-  background-color: #fff;
-  -moz-transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  -webkit-transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  -ms-transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  -o-transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: #2ecc71;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submit:hover {
-  -moz-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
   background-color: #000;
-  color: #fff;
+  color: #2ecc71;
+}
+
+.label-answer {
+  color: white;
+  text-align: justify;
+}
+
+.input-answer {
+  margin: 1vh 0;
+}
+
+strong, b {
+  color: #d35400;
+  font-size: 5vh;
+  font-weight: 900;
+}
+
+b {
+  color: #2ecc71;
+}
+
+.btn-data {
+  width: auto;
+  background-color: #d35400;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-data:hover {
+  background-color: #000;
+  color: #2ecc71;
+}
+
+.text {
+  color: white;
+  font-size: 4vh;
+}
+
+legend {
+  color: white;
+  font-family: "Nunito"
+  font-weight: lighter;
+  text-align: right;
+}
+
+#dois {
+  background-image: url("../img/3.jpg");
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale();
+}
+
+#quatro {
+  background-image: url("../img/4.jpg");
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale();
+}
+
+#cinco .box-question {
+  height: auto;
+  padding: 2vh 0;
+}
+
+#seis {
+  background-image: url("../img/2.png");
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale();
 }

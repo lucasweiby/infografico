@@ -7,15 +7,27 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="row box-start center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+  <div class="row box-question um center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h5 class="info-quest">1. Você já percebeu que os cestos de lixos são separados em cores de acordo com o material que deve receber? Quais você acha que são as cores e que cor remete à qual material?
         </h5>
-        <input class="input-name" type="text" name="nome" placeholder="Escreva seu nome..."> <br>
-        <input type="submit" name="submit" value="Próxima">
+        <form action="pergunta2.html">
+          <label class="label-answer"><input class="input-answer" type="radio" name="q1" id="a"> Plástico - Verde; Metal - Amarelo; Papel - Vermelho; Vidro - Azul; Orgânico - Marrom.</label> <br>
+          <label class="label-answer"><input class="input-answer" type="radio" name="q1" id="b"> Plástico - Azul; Metal - Amarelo; Papel - Vermelho; Vidro - Verde; Orgânico - Marrom.</label> <br>
+          <label class="label-answer"><input class="input-answer" type="radio" name="q1" id="c"> Plástico - Amarelo; Metal - Marrom; Papel - Verde; Vidro - Vermelho; Orgânico - Azul.</label> <br>
+          <label class="label-answer"><input class="input-answer" type="radio" name="q1" id="d"> Plástico - Marrom; Metal - Verde; Papel - Azul; Vidro - Amarelo; Orgânico - Vermelho</label> <br>
+          <label class="label-answer"><input class="input-answer" type="radio" name="q1" id="e"> Nenhuma das anteriores</label> <br>
+          <br>
+          <input class="submit" type="submit" name="submit" value="Próxima" onclick="soma1()">
+        </form>
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="js/function.js"></script>
+  <script type="text/javascript" src="js/pontos.js"></script>
 </body>
 </html>
